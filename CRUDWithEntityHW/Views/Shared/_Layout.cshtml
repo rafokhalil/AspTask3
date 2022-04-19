@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(120, 188, 240);
+        }
+
+        .leftside {
+            width: 8%;
+            height: 100vh;
+            float: left;
+            border: 0.25px solid gray;
+        }
+
+            .leftside > .profile {
+                height: 80px;
+                width: 80px;
+                margin-left: 10px;
+                margin-top: 10px;
+                border-radius: 50px;
+            }
+
+            .leftside > .menubtn {
+                height: 40px;
+                width: 40px;
+                margin-left: 25px;
+                margin-top: 100px;
+                padding: 0;
+                background-color: rgb(120, 188, 240);
+                border: 1px solid rgb(120, 188, 240);
+            }
+
+                .leftside > .menubtn > .menu {
+                    height: 35px;
+                    width: 35px;
+                }
+
+            .leftside > .otherbtn {
+                height: 40px;
+                width: 40px;
+                margin-left: 25px;
+                margin-top: 40px;
+                padding: 0;
+                background-color: rgb(120, 188, 240);
+                border: 1px solid rgb(120, 188, 240);
+            }
+
+                .leftside > .otherbtn > .other {
+                    height: 35px;
+                    width: 35px;
+                }
+
+            .leftside > .belowbtn {
+                height: 40px;
+                width: 40px;
+                margin-left: 25px;
+                margin-top: 120px;
+                padding: 0;
+                background-color: rgb(120, 188, 240);
+                border: 1px solid rgb(120, 188, 240);
+            }
+
+                .leftside > .belowbtn > .below {
+                    height: 35px;
+                    width: 35px;
+                }
+
+        .rightside {
+            width: 15%;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: 0.25px solid gray;
+        }
+
+            .rightside > .info {
+                background-color: white;
+                width: 170px;
+                height: 160px;
+                margin: auto;
+                margin-top: 40px;
+                border: 1px solid gray;
+                border-radius: 20px;
+                position: relative;
+            }
+
+                .rightside > .info > .first {
+                    position: absolute;
+                    left: 5px;
+                    top: 15px;
+                    font-size: 0.9em;
+                    font-weight: bolder;
+                }
+
+                .rightside > .info > .second {
+                    position: absolute;
+                    left: 15px;
+                    top: 40px;
+                    font-size: 1em;
+                    margin-top: 10px;
+                    font-weight: bolder;
+                }
+
+                .rightside > .info > img {
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    width: 60px;
+                    height: 70px;
+                }
+
+                .rightside > .info > .third {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                    font-size: 0.7em;
+                }
+
+                .rightside > .info > .fourth {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                    font-size: 0.7em;
+                }
+
+        .headside {
+            width: 77%;
+            height: 10vh;
+            float: left;
+            border: 0.25px solid gray;
+        }
+
+        .mainside {
+            width: 77%;
+            height: 90vh;
+            float: left;
+            border: 0.25px solid gray;
+        }
+
+        .changedside {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .view {
+            width: 100%;
+            height: 80vh;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="leftside">
+        <img class="profile" src="../../images/Rafael.jpeg" alt="Profile">
+        <button class="menubtn">
+            <img class="menu" src="../../images/menu.png" alt="menu">
+        </button>
+        <button class="otherbtn">
+            <img class="other" src="../../images/profile.png" alt="profile">
+        </button>
+        <button class="otherbtn">
+            <img class="other" src="../../images/statistic.png" alt="statistic">
+        </button>
+        <button class="otherbtn">
+            <img class="other" src="../../images/setting.png" alt="settings">
+        </button>
+
+        <button class="belowbtn">
+            <img class="below" src="../../images/right.png" alt="right">
+        </button>
+
+
+    </aside>
+    <header class="headside">
+        <nav style="background-color: rgb(120, 188, 240); " class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="nav-link" href="#" style="font-size: 1.3em;">Constructor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link " aria-current="page" href="#" style="font-size: 1.3em;">Dashboard</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link" href="#" style="font-size: 1.3em;">Orders</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link" href="#" style="font-size: 1.3em;">Sections</a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link " style="font-size: 1.3em;" href="#">Products</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link " style="font-size: 1.3em;" href="#">Clients</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input style="border-radius:20px;" class="form-control me-2" type="search" placeholder="Search"
+                               aria-label="Search">
+                        <button style="border-radius:20px;" class="btn btn-outline-success"
+                                type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="mainside">
+        <div class="changedside">
+            <div class="btn-group">
+                <button  onclick="location.href='@Url.Action("Index", "Admin")'" type="button" class="btn btn-primary" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;width: 100px;">Info</button>
+                <button  onclick="location.href='@Url.Action("Create", "Admin")'" type="button" class="btn btn-primary" style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; width:100px;">Register</button>
+            </div>
+        </div>
+
+        <div class="view">
+            @RenderBody()
+        </div>
+
+    </section>
+
+    <aside class="rightside">
+
+        <div class="info">
+            <span class="first">Total Sales</span>
+            <span class="second">$281.90</span>
+            <img src="../../images/3.png">
+
+            <span class="third">6 total orders</span>
+            <span class="fourth">View report</span>
+
+
+        </div>
+
+        <div class="info">
+            <span class="first">Total Sessions</span>
+            <span class="second">456</span>
+            <img src="../../images/2.png">
+
+            <span class="third">4 visitors</span>
+            <span class="fourth">See Live View </span>
+        </div>
+
+        <div class="info">
+            <span class="first">Customer Rate</span>
+            <span class="second">5.43%</span>
+            <img src="../../images/1.png">
+
+            <span class="third">First Time</span>
+            <span class="fourth">Returning</span>
+        </div>
+
+
+
+    </aside>
+
+</body>
+</html>

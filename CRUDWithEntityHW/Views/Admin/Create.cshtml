@@ -1,0 +1,27 @@
+﻿@model CRUDWithEntityHW.Entities.Admin
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-controller="Admin" asp-action="Create" enctype="multipart/form-data"
+      style="width:400px;height:400px;border:2px solid green;margin:auto;margin-top:50px" >
+    <label style="margin-left: 100px; font-size: 1.2em">Name:</label>
+    <input style="width:150px;height:20px;margin-top:10px;font-size:1em" asp-for="Name" />
+    <br />
+    <label style="margin-left: 100px; font-size: 1.2em">Surname:</label>
+    <input style="width:150px;height:20px;margin-top:10px;font-size:1em" asp-for="Surname" />
+    <br />
+    <label style="margin-left: 100px; font-size: 1.2em">Age:</label>
+    <input style="width:150px;height:20px;margin-top:10px;font-size:1em" asp-for="Age" />
+    <br />
+    <label style="margin-left: 100px; font-size: 1.2em">Adress:</label>
+    <input style="width:150px;height:20px;margin-top:10px;font-size:1em" asp-for="Adress" />
+    <br />
+    <label style="margin-left: 100px; font-size: 1.2em">Score:</label>
+    <input style="width:150px;height:20px;margin-top:10px;font-size:1em" asp-for="Score" />
+    <br />
+    <button style="width: 80px; height: 30px; margin-left: 150px; margin-top: 50px; font-size: 1.2em; border: 1px solid black; color: white; border-radius: 20px; background-color: rgb(39, 212, 0);" type="submit">Add</button>
+</form>
+
